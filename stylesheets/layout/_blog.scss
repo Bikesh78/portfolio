@@ -1,0 +1,19 @@
+#blog {
+  a {
+    &:hover {
+      color: initial;
+    }
+  }
+  .blog-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .blog-card {
+    flex-basis: 48%;
+    border-radius: 5px;
+    // max-width: 300px;
+    border: 1px solid #d3c2c2;
+    padding: 20px;
+  }
+}

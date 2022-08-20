@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     @media (max-width: 991px) {
-      display: flex;
+      display: none;
       flex-direction: column;
       position: absolute;
       top: 100%;
@@ -40,7 +40,8 @@ header {
     transform: translateX(0);
     transition: all 0.5s ease-in-out;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
+    display: inline-block;
     &:after {
       content: attr(data-after);
       position: absolute;
@@ -48,14 +49,14 @@ header {
       transform: translateX(-200%);
       opacity: 0;
       transition: all 0.5s ease-in-out;
-      color: $active-color;
+      // color: $active-color;
     }
     &:hover {
       transform: translateX(100%);
       color: white;
       &::after {
         opacity: 1;
-        color: yellow;
+        // color: yellow;
         transform: translateX(-100%);
       }
     }
@@ -101,6 +102,7 @@ body.show-mobile-menu {
   header {
     nav {
       @media (max-width: 991px) {
+        display: flex;
         right: 0;
       }
     }

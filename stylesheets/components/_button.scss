@@ -1,3 +1,33 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+.btn-primary {
+  padding: 10px;
+  color: $primary-color;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid $primary-color;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    $primary-color 50%,
+    $primary-color 100%
+  );
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-position: -100% 0%;
+    color: white;
+  }
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    border-color: $primary-color;
+    box-shadow: none;
+  }
+  &:active {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
