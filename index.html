@@ -19,11 +19,11 @@
         <div class="container">
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link" data-after="Home">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-after="About">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-after="Project">Project</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-after="Blog">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-after="Contact">Contact</a></li>
+                    <li class="nav-item"><a href="#introduction" class="nav-link" data-after="Home">Home</a></li>
+                    <li class="nav-item"><a href="#about-me" class="nav-link" data-after="About">About</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link" data-after="Project">Project</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link" data-after="Blog">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-after="Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu">
@@ -32,9 +32,9 @@
         </div>
     </header>
     <main>
-        <section class="introduction">
+        <section id="introduction">
             <div class="main-text">
-                <h1>Hello, I am Bikesh.</h1>
+                <h1 style="margin-bottom: 15px;">Hello, I am Bikesh.</h1>
                 <h1>An aspiring frontend developer.</h1>
             </div>
         </section>
@@ -44,13 +44,10 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="paragraph">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur tempora accusamus,
-                        distinctio
-                        aperiam fuga optio veniam nam vero? Ex, perferendis? Ipsum vel deleniti pariatur eos ipsam
-                        aut
-                        error
-                        quis.</p>
-                    <p>Few technologies that I have worked with</p>
+                    <p>Hi, I am Bikesh Rai as mentioned above. I'm a self-taught programmer and apart from coding I'm
+                        interested in cycling, listening to music and watching movies on my free time.
+                    </p>
+                    <p>Currently, I am learning React. Here are few technologies that I have worked with:</p>
                 </div>
                 <div class="skills-list">
                     <div class="icon html-5">
@@ -122,12 +119,12 @@
                 </div>
             </div>
         </section>
-        <section id="project">
+        <section id="project" class="animate fade-right">
             <div class="container">
                 <div class="heading">
                     <h2>Project</h2>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate fade-right">
                     <div class="project-image">
                         <img src="images/battleship.png" alt="">
                     </div>
@@ -146,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate fade-left">
                     <div class="project-image">
                         <img src="images/battleship.png" alt="">
                     </div>
@@ -169,13 +166,13 @@
                 </div>
             </div>
         </section>
-        <section id="blog">
+        <section id="blog" class="animate fade-up">
             <div class="container">
                 <div class="heading">
                     <h2>Blog</h2>
                 </div>
                 <div class="blog-content">
-                    <div class="blog-card">
+                    <div class="blog-card animate fade-up">
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <div class="blog-title">
                                 <h3>Title of the blog</h3>
@@ -185,7 +182,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="blog-card">
+                    <div class="blog-card animate fade-up">
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <div class="blog-title">
                                 <h3>Title of the blog</h3>
@@ -195,7 +192,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="blog-card">
+                    <div class="blog-card animate fade-up">
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <div class="blog-title">
                                 <h3>Title of the blog</h3>
@@ -209,7 +206,8 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
+        <h2>Get In Touch</h2>
         <div class="footer-icons">
             <div class="footer-icon mail">
                 <a href="mailto:bikeshrai78@gmail.com" target="_blank" rel="noopener noreferrer">
@@ -254,8 +252,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

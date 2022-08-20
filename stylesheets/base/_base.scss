@@ -19,5 +19,51 @@ img {
   height: auto;
 }
 section {
-  padding: 25px 0;
+  padding: 50px 0;
+}
+
+.animate {
+  opacity: 0;
+}
+.animate.active {
+  opacity: 1;
+}
+.active.fade-right {
+  animation: fade-right 1.2s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1.2s ease-in;
+}
+.active.fade-up {
+  animation: fade-up 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-up {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

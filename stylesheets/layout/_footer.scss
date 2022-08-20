@@ -1,10 +1,29 @@
 footer {
+  background-color: $primary-color;
+  padding: 50px 0 25px;
+
+  a {
+    &:hover {
+      color: initial;
+    }
+  }
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+  }
   .footer-icons {
-    background-color: $primary-color;
     display: flex;
     justify-content: center;
     column-gap: 50px;
+    row-gap: 25px;
     flex-wrap: wrap;
-    padding: 50px 0;
+    svg {
+      transition: all 0.5s ease-in-out;
+      color: white;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }

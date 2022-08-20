@@ -1,5 +1,9 @@
 #about-me {
   // margin: 25px 0;
+  animation: slide-in 1s ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   .paragraph {
     max-width: 80%;
     margin-inline: auto;
@@ -8,9 +12,9 @@
   .skills-list {
     display: flex;
     justify-content: center;
-    column-gap: 50px;
+    gap: 50px;
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin: 25px 0;
   }
   .icon {
     cursor: pointer;

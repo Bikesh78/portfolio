@@ -12,8 +12,10 @@
   .blog-card {
     flex-basis: 48%;
     border-radius: 5px;
-    // max-width: 300px;
     border: 1px solid #d3c2c2;
     padding: 20px;
+    @media (max-width: 767px) {
+      flex-basis: 100%;
+    }
   }
 }
