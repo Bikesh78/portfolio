@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     <title>Bikesh</title>
 </head>
 
@@ -19,23 +20,38 @@
         <div class="container">
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#introduction" class="nav-link" data-after="Home">Home</a></li>
-                    <li class="nav-item"><a href="#about-me" class="nav-link" data-after="About">About</a></li>
-                    <li class="nav-item"><a href="#project" class="nav-link" data-after="Project">Project</a></li>
-                    <li class="nav-item"><a href="#blog" class="nav-link" data-after="Blog">Blog</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link" data-after="Contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-after="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link" data-after="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link" data-after="Project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link" data-after="Blog">Blog</a>
+                    </li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <span></span><span></span><span></span>
-            </div>
+            <div class="mobile-menu"><span></span><span></span><span></span></div>
         </div>
     </header>
     <main>
         <section id="introduction">
-            <div class="main-text">
-                <h1 style="margin-bottom: 15px;">Hello, I am Bikesh.</h1>
-                <h1>An aspiring frontend developer.</h1>
+            <div class="main-text active fade-right">
+                <h1>Hi, I am Bikesh.</h1>
+                <h3>An aspiring frontend developer.</h3>
+                <h4>I am committed to life-long learning and have a knack for problem solving.</h4>
+                <div class="button-container">
+                    <a href="#about-me" style="margin-right: 15px;"><button class="btn-secondary">Know More</button></a>
+                    <a href="https://5dwuo3x5y0d.typeform.com/to/EFBXlu0f" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-secondary">Contact Me</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image-container active fade-left">
+                <img src="/images/hero-image.svg" alt="Hero Image" />
             </div>
         </section>
         <section id="about-me">
@@ -44,10 +60,15 @@
                     <h2>About Me</h2>
                 </div>
                 <div class="paragraph">
-                    <p>Hi, I am Bikesh Rai as mentioned above. I'm a self-taught programmer and apart from coding I'm
-                        interested in cycling, listening to music and watching movies on my free time.
+                    <p>
+                        Hi, I am Bikesh Rai as mentioned above. I'm a self-taught
+                        programmer and apart from coding I'm interested in cycling,
+                        listening to music and watching movies on my free time.
                     </p>
-                    <p>Currently, I am learning React. Here are few technologies that I have worked with:</p>
+                    <p>
+                        Currently, I am learning React. Here are few technologies that I
+                        have worked with:
+                    </p>
                 </div>
                 <div class="skills-list">
                     <div class="icon html-5">
@@ -119,21 +140,24 @@
                 </div>
             </div>
         </section>
-        <section id="project" class="animate fade-right">
+        <section id="project">
             <div class="container">
-                <div class="heading">
+                <div class="heading animate fade-up">
                     <h2>Project</h2>
                 </div>
-                <div class="project-card animate fade-right">
+                <div class="project-card animate fade-up">
                     <div class="project-image">
-                        <img src="images/battleship.png" alt="">
+                        <img src="images/battleship.png" alt="Battleship Project Screenshot" />
                     </div>
                     <div class="project-detail">
                         <div class="project-title">
                             <h3>Battleship</h3>
                         </div>
                         <div class="project-description">
-                            <p>Battleship game built with Vanilla JavaScript, Sass, Webpack and Jest</p>
+                            <p>
+                                Battleship game built with Vanilla JavaScript, Sass, Webpack
+                                and Jest
+                            </p>
                         </div>
                         <div class="button-container">
                             <a href="https://bikesh78.github.io/battleship/" target="_blank"><button
@@ -143,24 +167,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card animate fade-left">
+                <div class="project-card animate fade-up">
                     <div class="project-image">
-                        <img src="images/battleship.png" alt="">
+                        <img src="images/ip-address-tracker.png" alt="IP Address Tracker Project Screenshot" />
                     </div>
                     <div class="project-detail">
                         <div class="project-title">
                             <h3>Battleship</h3>
                         </div>
                         <div class="project-description">
-                            <p>Battleship game built with Vanilla JavaScript, Sass, Webpack and Jest</p>
+                            <p>
+                                Battleship game built with Vanilla JavaScript, Sass, Webpack
+                                and Jest
+                            </p>
                         </div>
                         <div class="button-container">
                             <a href="https://bikesh78.github.io/battleship/" target="_blank"><button
-                                    class="btn btn-primary">View
-                                    Project</button></a>
+                                    class="btn btn-primary">View Project</button></a>
                             <a href="https://github.com/Bikesh78/battleship" target="_blank"><button
-                                    class="btn btn-primary">View
-                                    Repo</button></a>
+                                    class="btn btn-primary">View Repo</button></a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +231,7 @@
             </div>
         </section>
     </main>
-    <footer id="contact">
+    <footer>
         <h2>Get In Touch</h2>
         <div class="footer-icons">
             <div class="footer-icon mail">

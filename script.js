@@ -10,7 +10,7 @@ function animate() {
   elements.forEach((element) => {
     let windowHeight = window.innerHeight;
     const positionFromTop = element.getBoundingClientRect().top;
-    let elementVisible = 150;
+    let elementVisible = 50;
     if (positionFromTop < windowHeight - elementVisible) {
       element.classList.add("active");
     } else {

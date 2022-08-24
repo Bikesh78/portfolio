@@ -1,14 +1,16 @@
 header {
   padding: 20px 0;
   background-color: $primary-color;
-  position: fixed;
+  position: sticky;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  top: 0;
   width: 100%;
   z-index: 5;
   nav {
     display: flex;
     justify-content: space-between;
     @media (max-width: 991px) {
-      // display: none;
+      display: none;
       flex-direction: column;
       position: absolute;
       top: 100%;
@@ -20,6 +22,7 @@ header {
       width: 200px;
       transition: all 0.5s ease-in-out;
       animation: hide-menu 0.5s ease-in-out;
+      animation-fill-mode: forwards;
     }
   }
   .nav-list {
@@ -102,6 +105,8 @@ body.show-mobile-menu {
   header {
     nav {
       @media (max-width: 991px) {
+        display: flex;
+        box-shadow: 15px 20px 5px 15px rgb(0, 0, 0, 0.2);
         animation: show-menu 0.5s ease-in-out;
         animation-fill-mode: forwards;
       }

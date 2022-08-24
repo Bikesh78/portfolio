@@ -345,15 +345,15 @@ section {
 }
 
 .active.fade-right {
-  animation: fade-right 1.2s ease-in;
+  animation: fade-right 0.5s ease-in;
 }
 
 .active.fade-left {
-  animation: fade-left 1.2s ease-in;
+  animation: fade-left 0.5s ease-in;
 }
 
 .active.fade-up {
-  animation: fade-up 1s ease-in;
+  animation: fade-up 0.3s ease-in;
 }
 
 @keyframes fade-left {
@@ -393,7 +393,8 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 35px;
+  color: white;
   margin: 0;
 }
 @media (max-width: 991px) {
@@ -462,7 +463,9 @@ h1 {
 header {
   padding: 20px 0;
   background-color: #5742f1;
-  position: fixed;
+  position: sticky;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  top: 0;
   width: 100%;
   z-index: 5;
 }
@@ -472,6 +475,7 @@ header nav {
 }
 @media (max-width: 991px) {
   header nav {
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -483,6 +487,7 @@ header nav {
     width: 200px;
     transition: all 0.5s ease-in-out;
     animation: hide-menu 0.5s ease-in-out;
+    animation-fill-mode: forwards;
   }
 }
 header .nav-list {
@@ -565,6 +570,8 @@ header .mobile-menu span:nth-child(3) {
 
 @media (max-width: 991px) {
   body.show-mobile-menu header nav {
+    display: flex;
+    box-shadow: 15px 20px 5px 15px rgba(0, 0, 0, 0.2);
     animation: show-menu 0.5s ease-in-out;
     animation-fill-mode: forwards;
   }
@@ -633,7 +640,10 @@ footer .footer-icons svg:hover {
 }
 
 #introduction {
-  padding: 125px 0 100px;
+  min-height: calc(100vh - 64px);
+  background-color: #5742f1;
+  color: white;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -641,22 +651,20 @@ footer .footer-icons svg:hover {
 }
 @media (max-width: 991px) {
   #introduction {
-    padding: 100px 0 50px;
-  }
-}
-@media (max-width: 767px) {
-  #introduction {
-    padding: 100px 0 0;
+    padding: 50px 0;
+    flex-direction: column-reverse;
   }
 }
 #introduction .main-text h1 {
-  transform: translateX(-100%);
-  opacity: 0;
-  animation: slide-in 1s ease-in-out;
-  animation-fill-mode: forwards;
+  margin-bottom: 15px;
 }
-#introduction .main-text h1:last-child {
-  animation-delay: 1.5s;
+@media (max-width: 991px) {
+  #introduction .image-container {
+    max-width: 500px;
+  }
+}
+#introduction .button-container {
+  margin-top: 20px;
 }
 
 @keyframes slide-in {
@@ -670,8 +678,8 @@ footer .footer-icons svg:hover {
   }
 }
 #about-me {
-  animation: slide-in 1s ease-in-out;
-  animation-delay: 2.5s;
+  animation: slide-in 0.5s ease-in-out;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -726,7 +734,7 @@ footer .footer-icons svg:hover {
 .btn-primary {
   padding: 10px;
   color: #5742f1;
-  background-color: transparent;
+  background-color: white;
   border-radius: 5px;
   border: 1px solid #5742f1;
   background-size: 200% 100%;
@@ -745,6 +753,18 @@ footer .footer-icons svg:hover {
 }
 .btn-primary:active:focus {
   box-shadow: none;
+}
+
+.btn-secondary {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: #5742f1;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.btn-secondary:hover {
+  background-color: #2d13ed;
 }
 
 .project-card {

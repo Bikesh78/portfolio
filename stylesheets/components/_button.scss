@@ -1,7 +1,7 @@
 .btn-primary {
   padding: 10px;
   color: $primary-color;
-  background-color: transparent;
+  background-color: white;
   border-radius: 5px;
   border: 1px solid $primary-color;
   background-size: 200% 100%;
@@ -29,5 +29,16 @@
     &:focus {
       box-shadow: none;
     }
+  }
+}
+.btn-secondary {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: #5742f1;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $secondary-color;
   }
 }
