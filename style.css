@@ -751,6 +751,15 @@ footer .footer-icons svg:hover {
   border-color: #5742f1;
   box-shadow: none;
 }
+.btn-primary:focus {
+  color: #5742f1;
+}
+.btn-primary:focus:hover {
+  color: white;
+}
+.btn-primary:active {
+  color: #5742f1;
+}
 .btn-primary:active:focus {
   box-shadow: none;
 }

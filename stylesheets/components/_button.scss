@@ -25,7 +25,16 @@
     border-color: $primary-color;
     box-shadow: none;
   }
+  &:focus {
+    color: $primary-color;
+  }
+  &:focus {
+    &:hover {
+      color: white;
+    }
+  }
   &:active {
+    color: $primary-color;
     &:focus {
       box-shadow: none;
     }
